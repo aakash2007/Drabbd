@@ -1,0 +1,261 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drabbd Website!</title>
+	 <!-- Bootstrap Core CSS -->
+
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/pammistylesheet.css' %}" rel="stylesheet">
+	<link href="{% static 'avbc/stylesheet.css' %}" rel="stylesheet">
+ <script src="{% static 'js/wow.min.js' %}"></script>
+  <script>new WOW().init();</script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+<body>
+ <div class="container-fluid">
+ <div id="header1">
+ <div class="container-fluid">
+ <div id="logo">
+ <img src="{% static 'images/Drabbd-Logo-New.png' %}" class="img-responsive">
+ </div> 
+  <ul id="navbar">
+   <li><a href="{% url 'index' %}">Home</li></a>
+   <li><a href="{% url 'what' %}">Capabilities</li></a>
+   <li><a href="{% url 'index' %}#work">Work</li></a>
+   <li><a href="{% url 'index' %}#service">Services</li></a>
+   <li><a href="{% url 'how' %}">How we do it</li></a>
+   <li><a href="{% url 'index' %}#contact">Contact</li></a>
+  </ul>   
+</div>
+</div>
+</div>
+<div class="container-fluid">
+ <div class="row spa">
+<h1><span>How</span> we do it?</h1>
+ </div>
+ <div class="row">
+  
+    <div class="col-xs-4 strategy1">
+	 <h1>Strategy</h1>
+	<h4>We conduct worksession with all key<br>
+        stakeholders in the room to ensure fast<br>
+     alignment. All documented in a brief that<br>
+	 includes,user profiles, prioritized user needs,<br>
+	 brand attributes competitors and 3<br>
+	 conceptual directions</h4>
+   </div>
+    <div class="col-xs-1">
+   </div>
+   <div class="col-xs-2 imgs1">
+     <img src="{% static 'images/001-strategy.png' %}">
+	  <br>
+	 <div class="vertical v1"> </div>
+  </div>
+    <div class="col-xs-1">
+  </div>
+    <div class="col-xs-4 one" >
+	<h1>1</h1>
+  </div>
+  </div>
+  
+  
+  <div class="row">
+  
+  <div class="col-xs-4 two">
+	 <h1>2</h1>
+   </div>
+    <div class="col-xs-1">
+   </div>
+   <div class="col-xs-2 text-left imgs2">
+     <img src="{% static 'images/002-vector-1.png' %}">
+	  <br>
+	 <div class="vertical v2"> </div>
+  </div>
+    <div class="col-xs-1">
+  </div>
+    <div class="col-xs-4 strategy2 " >
+	<h1>Design</h1>
+	<h4>After presenting 3 directiona and getting<br>
+        approval on one we then proceed to create <br>
+     high fidelity designs for key screens in the<br>
+	 experience. Taking into consideration the<br>
+	 brand narrative and best practise.<br>
+	 </h4>
+   
+  </div>
+</div>
+
+
+<div class="row">
+  
+    <div class="col-xs-4 strategy3">
+	 <h1>Development</h1>
+	<h4>Deciding on the right application architecure<br>
+        for your platform can't be left chance. To<br>
+     ensure you are putting in place the right<br>
+	solution you need experienced technologists<br>
+	 to help you define how to structure your<br>
+	 application infrastructure</h4>
+   </div>
+    <div class="col-xs-1">
+   </div>
+   <div class="col-xs-2 imgs3">
+     <img src="{% static 'images/003-coding.png' %}">
+	  <br>
+	 <div class="vertical v3"> </div>
+  </div>
+    <div class="col-xs-1">
+  </div>
+    <div class="col-xs-4 three" >
+	<h1>3</h1>
+  </div>
+  </div>
+  
+  
+  <div class="row">
+  
+  <div class="col-xs-4 four">
+	 <h1>4</h1>
+   </div>
+    <div class="col-xs-1">
+   </div>
+   <div class="col-xs-2 imgs4">
+     <img src="{% static 'images/004-megaphone.png' %}">
+	  <br>
+	 <div class="vertical v4"> </div>
+  </div>
+    <div class="col-xs-1">
+  </div>
+    <div class="col-xs-4 strategy4 " >
+	<h1>Launch/ Marketing</h1>
+	<h4>The art of lauching is a combination of<br>
+       planning experience, finnesse and ensuring <br>
+     that you have thought of every scenario. Our <br>
+	 QA process is based on script that map to<br>
+	 our CORE strategy and user stories, ensuring<br>
+	 fluid and smooth execution of QA and the<br>
+	 Launch
+	 </h4>
+   
+  </div>
+</div>
+
+<div class="row">
+  
+    <div class="col-xs-4 strategy5">
+	 <h1>Data Analytics</h1>
+	<h4>Find graphs and pie charts boring? Don't <br>
+        fear when we're here. Analysing the usage<br>
+     data and feedback, we'll help you decide<br>
+	what features you need and what require<br>
+	 changes.<br>
+	</h4>
+   </div>
+    <div class="col-xs-1">
+   </div>
+   <div class="col-xs-2 imgs5">
+     <img src="{% static 'images/005-analysis.png' %}">
+	  <br>
+	 <div class="vertical v5"> </div>
+  </div>
+    <div class="col-xs-1">
+  </div>
+    <div class="col-xs-4 five" >
+	<h1>5</h1>
+  </div>
+  </div>
+  
+  
+  <div class="row">
+  
+  <div class="col-xs-4 six">
+	 <h1>6</h1>
+   </div>
+    <div class="col-xs-1">
+   </div>
+   <div class="col-xs-2 imgs6">
+     <img src="{% static 'images/007-exchange.png' %}">
+	 <br>
+	 <div class="vertical v6"> </div>
+  </div>
+    <div class="col-xs-1">
+  </div>
+    <div class="col-xs-4 strategy6 " >
+	<h1>Production Iteration</h1>
+	<h4>You need app that is for the now, which<br>
+       can never be the same as the one at the<br>
+     start. <br>
+	 This calls for iterations and reiterations. We<br>
+	 will carry the app through all those, as well.<br>
+	 Launch
+	 </h4>
+   
+  </div>
+</div>
+<div class="row ready">
+ <h3>Ready to talk?</h3>
+ <a href="{% url 'index' %}#contact" class="button_ready">Start a Project</a>
+</div>
+
+
+<div class="container-fluid">
+ <div class="row group">
+  <div class="col-sm-3">
+ 
+<address>
+           F -452<br>
+           Industrial Area<br>
+           Mohali<br>
+           India<br>
+           +91-9781807528<br>
+
+</address>
+  <a class="copy"> <i class="fa fa-copyright" aria-hidden="true"></i></a>2017 Drabbd<sup>TM</sup>. All rights reserved.
+  </div>
+  
+  
+  <div class="col-sm-9">  
+   <div class="footer">
+   <ul id="navbar1">
+      <li><a href="{% url 'index' %}">Home</li></a>
+      <li><a href="{% url 'what' %}">Capabilities</li></a>
+      <li><a href="{% url 'index' %}#work">Work</li></a>
+      <li><a href="{% url 'index' %}#service">Services</li></a>
+      <li><a href="{% url 'how' %}">How we do it</li></a>
+      <li><a href="{% url 'index' %}#contact">Contact</li></a>   
+  </ul>  </div>   
+ </div> 
+</div>
+</div>
+
+ </div>
+ 
+
+
+</body>
+
+</html>

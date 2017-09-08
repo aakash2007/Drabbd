@@ -1,0 +1,177 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drabbd Website!</title>
+	 <!-- Bootstrap Core CSS -->
+
+  <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <!-- Custom Fonts -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+    	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/pammistylesheet.css' %}" rel="stylesheet">
+	<link href="{% static 'avbc/stylesheet.css' %}" rel="stylesheet">
+ <script src="{% static 'js/wow.min.js' %}"></script>
+  <script>new WOW().init();</script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+<body>
+ <div class="container-fluid">
+ <div id="header1">
+ <div class="container-fluid">
+ <div id="logo">
+ <img src="{% static 'images/Drabbd-Logo-New.png' %}" class="img-responsive">
+ </div> 
+  <ul id="navbar">
+   <li><a href="{% url 'index' %}">Home</li></a>
+   <li><a href="{% url 'what' %}">Capabilities</li></a>
+   <li><a href="{% url 'index' %}#work">Work</li></a>
+   <li><a href="{% url 'index' %}#service">Services</li></a>
+   <li><a href="{% url 'how' %}">How we do it</li></a>
+   <li><a href="{% url 'index' %}#contact">Contact</li></a>   
+  </ul>   
+</div>
+</div>
+
+<div class="container">
+<div class="cap">
+<h1> What do we do?</h1>
+</div>
+
+ <div class="row social">
+  
+    <div class="col-xs-4 UX">
+	 <img src="{% static 'images/Group71.png' %}">
+	 <h3>Strategy</h3>
+		<h4>Brand Strategy</h4>
+	<h4>UX Strategy</h4>
+	<h4>Marketing Strategy</h4>
+	<h4>Product Defination</h4>
+	<h4>Content Strategy</h4>
+	<h4>Social Media Innovation</h4>	
+   </div>
+    
+  <div class="col-xs-4 UX">
+	 <img src="{% static 'images/path1.png' %}">
+	 <h3>Design</h3>
+	<h4>Product Prototyping</h4>
+	<h4>Motion Design</h4>
+	<h4>Video</h4>
+	<h4>Social Media Content</h4>
+   </div>
+    
+<div class="col-xs-4 UX">
+	 <img src="{% static 'images/pathh.png' %}">
+	 <h3>Development</h3>
+	<h4>Ecommerce Platform</h4>
+	<h4>Mobile Applications</h4>
+	<h4>Content Management System</h4>
+	</div>
+ </div> 
+ 
+ <div class="row why">
+ <h1>Why drabbd?</h1>
+ </div>
+ </div>
+ 
+ <div class="container-fluid bluebox">
+ <h3>"To launch a business means succesfully solving problems."<br>
+      Solving problems means listening.<br></h3>
+ <h2>	  -Richard Branson"</h2>
+ </div>
+ 
+<div class="container">
+ <div class="row yes">
+ <h4>Yes! That's what we do. Here are the problems we solve:.</h4>
+ </div>
+ <div class="row couple">
+  
+    <div class="col-xs-4">
+	 <img src="{% static 'images/newlyweds.png' %}">
+	 <h4>We create products to</h4>
+	<h4>establish better connection</h4>
+	<h4>better your business and</h4>
+	<h4>your customers by</h4>
+	<h4>understanding your brand and</h4>
+    <h4>customers, which eventually</h4>
+    <h4>helps to achieve your business</h4>
+    <h4>goals</h4>	
+   </div>
+    
+  <div class="col-xs-4">
+	 <img src="{% static 'images/megaphone.png' %}">
+	 <h4>We help you to market the</h4>
+	<h4>products when they are busy</h4>
+	<h4>focusing on your core business</h4>
+   </div>
+    
+<div class="col-xs-4">
+	 <img src="{% static 'images/radar.png' %}">
+	 <h4>If you have hit the ceiling, we</h4>
+	<h4>will help you diagnose the </h4>
+	<h4>problem and solve it</h4>
+	</div>
+
+</div>
+</div>
+
+
+<div class="container-fluid">
+ <div class="row group">
+  <div class="col-sm-3">
+ 
+<address>
+           F -452<br>
+           Industrial Area<br>
+           Mohali<br>
+           India<br>
+           +91-9781807528<br>
+
+</address>
+ <a class="copy"> <i class="fa fa-copyright" aria-hidden="true"></i></a>2017 Drabbd<sup>TM</sup>. All rights reserved.
+  </div>
+  
+  
+  <div class="col-sm-9">  
+   <div class="footer">
+   <ul id="navbar1">
+      <li><a href="{% url 'index' %}">Home</li></a>
+      <li><a href="{% url 'what' %}">Capabilities</li></a>
+      <li><a href="{% url 'index' %}#work">Work</li></a>
+      <li><a href="{% url 'index' %}#service">Services</li></a>
+      <li><a href="{% url 'how' %}">How we do it</li></a>
+      <li><a href="{% url 'index' %}#contact">Contact</li></a> 
+  </ul>  </div>   
+ </div> 
+</div>
+</div>
+
+ 
+ 
+
+
+</div>
+
+</body>
+
+</html>
