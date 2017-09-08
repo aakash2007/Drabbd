@@ -325,10 +325,10 @@
  <div class="container last2">
   <div class="row" >
    <div class="col-xs-12">
-  <form>
+  <form method="POST" class="query-form">{% csrf_token %}
      <div class="form-group">
   
-      <input class="form-control" type="text" placeholder="Name"/>
+      <!-- <input class="form-control" type="text" placeholder="Name"/>
       <input class="form-control" type="email" placeholder="Email"/>
       <input class="form-control" type="text" placeholder="Mobile Number"/>
     <input class="form-control" list="currency" name="browser" placeholder="Choose Currency">
@@ -340,10 +340,12 @@
     <option value="Dinar ">
     <option value="Pound ">
   </datalist>
-  <input class="form-control" type="text" placeholder="Tell us litte bit about your project and timeline"/>
+  <input class="form-control" type="text" placeholder="Tell us litte bit about your project and timeline"/> -->
+  {{ form.as_p }}
        
      <button type="submit" class="btn btn-default">Submit</button>
-     </div> </form>
+     </div>
+     </form>
  
    
   
