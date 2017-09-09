@@ -325,13 +325,13 @@
  <div class="container last2">
   <div class="row" >
    <div class="col-xs-12">
-  <form method="POST" class="query-form">{% csrf_token %}
+  <form id="query-form">
      <div class="form-group">
   
-      <!-- <input class="form-control" type="text" placeholder="Name"/>
-      <input class="form-control" type="email" placeholder="Email"/>
-      <input class="form-control" type="text" placeholder="Mobile Number"/>
-    <input class="form-control" list="currency" name="browser" placeholder="Choose Currency">
+      <input class="form-control" type="text" name="name" placeholder="Name" required>
+      <input class="form-control" type="email" name="email" placeholder="Email" required>
+      <input class="form-control" type="number" name="phone_number" placeholder="Mobile Number" required>
+    <input class="form-control" list="currency" name="amount" placeholder="Enter Amount" required>
      
   <datalist id="currency" >
     <option value="Dollar ">
@@ -340,27 +340,50 @@
     <option value="Dinar ">
     <option value="Pound ">
   </datalist>
-  <input class="form-control" type="text" placeholder="Tell us litte bit about your project and timeline"/> -->
-  {{ form.as_p }}
+  <input class="form-control" type="text" name="text" placeholder="Tell us litte bit about your project and timeline" required>
        
-     <button type="submit" class="btn btn-default">Submit</button>
+     <button type="submit" class="btn btn-default" id="query-submit">Submit</button>
      </div>
      </form>
- 
-   
-  
-
 </div>
 </div>
-
-</div>
-
-
-
-
-
 </div>
 </div>
+</div>
+<script type="text/javascript">
+  $("#query-form").submit(function(event) {
+    var data = {
+      name:$("input[name=name]").val(),
+      email:$("input[name=email]").val(),
+      phone_number:$("input[name=phone_number]").val(),
+      amount:$("input[name=amount]").val(),
+      text:$("input[name=text]").val(),
+    };
+    var email_pat = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+    if(!email_pat.test(data.email)){
+      alert("Please enter a valid email address");
+      return false;
+    };
+    $.post({
+      url:'.',
+      data:data,
+      dataType:'json',
+      success:function (res) {
+        console.log(res);
+        if(res.error){
+          window.prompt(res.error);
+        }
+        else{
+          $("input[name=name]").val("");
+          $("input[name=email]").val("");
+          $("input[name=phone_number]").val("");
+          $("input[name=amount]").val("");
+          $("input[name=text]").val("");
+        }
+      },
+    });
+    return false;
+  });
+</script>
 </body>
-
 </html>
